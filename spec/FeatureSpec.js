@@ -2,7 +2,7 @@
 
 describe('Feature test', function() {
   var airport;
-  var Plane;
+  var plane;
 
   beforeEach(function() {
     plane = new Plane();
