@@ -29,7 +29,7 @@ describe('Feature test', function() {
 
   it('plane can not land when the weather is stormy', function(){
     spyOn(airport,'isStormy').and.returnValue(true);
-    expect(function() {plane.land()}).toThrowError('cannot land due to storm');
+    expect(function() {plane.land(airport)}).toThrowError('cannot land due to storm');
     expect(airport.planes()).not.toContain(plane);
   });
 
